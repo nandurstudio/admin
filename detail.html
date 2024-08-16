@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Page</title>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .card-header {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .progress {
+            background-color: #e9ecef;
+            border-radius: 0.25rem;
+        }
+        .progress-bar {
+            background-color: #007bff; /* Sesuaikan warna */
+            height: 5px;
+            line-height: 5px;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header" id="nameHeader">Name</div>
+            <div class="card-body">
+                <p><strong>Position:</strong> <span id="position">Loading...</span></p>
+                <p><strong>Progress:</strong></p>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" id="progressBar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p id="progressText">0%</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to Handle URL Parameter and Additional Details -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to get URL parameter by name
+            function getQueryParam(name) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(name);
+            }
+
+            // Get parameters from the URL
+            const name = getQueryParam('name');
+            const position = getQueryParam('position');
+            const progress = getQueryParam('progress');
+
+            // Update the page content with the parameters
+            if (name && position && progress) {
+                document.getElementById('nameHeader').textContent = name;
+                document.getElementById('position').textContent = position;
+                document.getElementById('progressBar').style.width = progress + '%';
+                document.getElementById('progressBar').setAttribute('aria-valuenow', progress);
+                document.getElementById('progressText').textContent = progress + '%';
+            } else {
+                document.getElementById('nameHeader').textContent = 'No data available';
+                document.getElementById('position').textContent = 'N/A';
+                document.getElementById('progressBar').style.width = '0%';
+                document.getElementById('progressBar').setAttribute('aria-valuenow', '0');
+                document.getElementById('progressText').textContent = '0%';
+            }
+        });
+    </script>
+</body>
+</html>

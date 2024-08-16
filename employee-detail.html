@@ -1,0 +1,1144 @@
+<!doctype html>
+<html lang="en" data-bs-theme="blue-theme">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalbe Nutritionals | E-Learning System</title>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png">
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet">
+  <script src="assets/js/pace.min.js"></script>
+
+  <!--plugins-->
+  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/simplebar/css/simplebar.css">
+  <!--bootstrap css-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <!--main css-->
+  <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="sass/main.css" rel="stylesheet">
+  <link href="assets/css/horizontal-menu.css" rel="stylesheet">
+  <link href="sass/dark-theme.css" rel="stylesheet">
+  <link href="sass/blue-theme.css" rel="stylesheet">
+  <link href="sass/semi-dark.css" rel="stylesheet">
+  <link href="sass/bordered-theme.css" rel="stylesheet">
+  <link href="sass/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--start header-->
+  <header class="top-header">
+    <nav class="navbar navbar-expand align-items-center justify-content-between gap-4 border-bottom">
+      <div class="logo-header d-none d-xl-flex align-items-center gap-2">
+        <div class="logo-icon">
+          <img src="assets/images/logo-icon.png" class="logo-img" width="45" alt="">
+        </div>
+        <div class="logo-name">
+          <h5 class="mb-0">Kalbe Nutritionals</h5>
+        </div>
+      </div>
+      <div class="btn-toggle d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
+      </div>
+      <div class="search-bar">
+        <div class="position-relative">
+          <input class="form-control rounded-5 px-5 search-control d-lg-block d-none" type="text" placeholder="Search">
+          <span
+            class="material-icons-outlined position-absolute d-lg-block d-none ms-3 translate-middle-y start-0 top-50">search</span>
+          <span
+            class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 search-close">close</span>
+          <div class="search-popup p-3">
+            <div class="card rounded-4 overflow-hidden">
+              <div class="card-header d-lg-none">
+                <div class="position-relative">
+                  <input class="form-control rounded-5 px-5 mobile-search-control" type="text" placeholder="Search">
+                  <span
+                    class="material-icons-outlined position-absolute ms-3 translate-middle-y start-0 top-50">search</span>
+                  <span
+                    class="material-icons-outlined position-absolute me-3 translate-middle-y end-0 top-50 mobile-search-close">close</span>
+                </div>
+              </div>
+              <div class="card-body search-content">
+                <p class="search-title">Recent Searches</p>
+                <div class="d-flex align-items-start flex-wrap gap-2 kewords-wrapper">
+                  <a href="javascript:;" class="kewords"><span>Angular Template</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>Dashboard</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>Admin Template</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>Bootstrap 5 Admin</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>Html eCommerce</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>Sass</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                  <a href="javascript:;" class="kewords"><span>laravel 9</span><i
+                      class="material-icons-outlined fs-6">search</i></a>
+                </div>
+                <hr>
+                <p class="search-title">Tutorials</p>
+                <div class="search-list d-flex flex-column gap-2">
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="list-icon">
+                      <i class="material-icons-outlined fs-5">play_circle</i>
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title ">Wordpress Tutorials</h5>
+                    </div>
+                  </div>
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="list-icon">
+                      <i class="material-icons-outlined fs-5">shopping_basket</i>
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title">eCommerce Website Tutorials</h5>
+                    </div>
+                  </div>
+
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="list-icon">
+                      <i class="material-icons-outlined fs-5">laptop</i>
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title">Responsive Design</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+                <p class="search-title">Members</p>
+
+                <div class="search-list d-flex flex-column gap-2">
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="memmber-img">
+                      <img src="assets/images/avatars/13.png" width="32" height="32" class="rounded-circle" alt="">
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title ">Andrew Stark</h5>
+                    </div>
+                  </div>
+
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="memmber-img">
+                      <img src="assets/images/avatars/02.png" width="32" height="32" class="rounded-circle" alt="">
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title ">Snetro Jhonia</h5>
+                    </div>
+                  </div>
+
+                  <div class="search-list-item d-flex align-items-center gap-3">
+                    <div class="memmber-img">
+                      <img src="assets/images/avatars/03.png" width="32" height="32" class="rounded-circle" alt="">
+                    </div>
+                    <div class="">
+                      <h5 class="mb-0 search-list-title">Michle Clark</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="card-footer text-center bg-transparent">
+                <a href="javascript:;" class="btn w-100">See All Search Results</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav gap-1 nav-right-links align-items-center">
+        <li class="nav-item d-lg-none mobile-search-btn">
+          <a class="nav-link" href="javascript:;"><i class="material-icons-outlined">search</i></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="avascript:;" data-bs-toggle="dropdown"><img
+              src="assets/images/county/05.png" width="22" alt="">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/05.png" width="20" alt=""><span class="ms-2">United States</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/01.png" width="20" alt=""><span class="ms-2">Canada</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/02.png" width="20" alt=""><span class="ms-2">Malaysia</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/03.png" width="20" alt=""><span class="ms-2">Germany</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/04.png" width="20" alt=""><span class="ms-2">Netherlands</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/06.png" width="20" alt=""><span class="ms-2">China</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/07.png" width="20" alt=""><span class="ms-2">Sweden</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/08.png" width="20" alt=""><span class="ms-2">India</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="javascrpt:;" class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
+            <img src="assets/images/avatars/13.png" class="rounded-circle p-1 border" width="45" height="45" alt="">
+          </a>
+          <div class="dropdown-menu dropdown-user dropdown-menu-end shadow">
+            <a class="dropdown-item  gap-2 py-2" href="javascript:;">
+              <div class="text-center">
+                <img src="assets/images/avatars/13.png" class="rounded-circle p-1 shadow mb-3" width="90" height="90"
+                  alt="">
+                <h5 class="user-name mb-0 fw-bold">Hello, Cici</h5>
+              </div>
+            </a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">person_outline</i>Profile</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">local_bar</i>Setting</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">dashboard</i>Dashboard</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">account_balance</i>Earning</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">cloud_download</i>Downloads</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">power_settings_new</i>Logout</a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+  <!--end top header-->
+
+  <!--navigation-->
+  <div class="primary-menu">
+    <nav class="navbar navbar-expand-xl align-items-center">
+      <div class="offcanvas offcanvas-start w-260" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom h-70">
+          <div class="d-flex align-items-center gap-2">
+            <div class="">
+              <img src="assets/images/logo-icon.png" class="logo-icon" width="45" alt="logo icon">
+            </div>
+            <div class="">
+              <h4 class="logo-text">Kalbe Nutritionals</h4>
+            </div>
+          </div>
+          <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="offcanvas">
+            <i class="material-icons-outlined">close</i>
+          </a>
+        </div>
+        <div class="offcanvas-body p-0">
+          <ul class="navbar-nav align-items-center flex-grow-1">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                <div class="parent-icon"><i class='material-icons-outlined'>military_tech</i>
+                </div>
+                <div class="menu-title d-flex align-items-center">E-Competency</div>
+                <div class="ms-auto dropy-icon"><i class='material-icons-outlined'>expand_more</i></div>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pages-coming-soon.html"><i
+                      class='material-icons-outlined'>navigate_next</i>Matrix Competency</a></li>
+                <li><a class="dropdown-item" href="pages-coming-soon.html"><i
+                      class='material-icons-outlined'>navigate_next</i>Training</a></li>
+                <li><a class="dropdown-item" href="pages-coming-soon.html"><i
+                      class='material-icons-outlined'>navigate_next</i>Assessment</a></li>
+                <li class="nav-item dropend">
+                  <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i
+                      class='material-icons-outlined'>pie_chart</i>Dashboard</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item" href="pages-coming-soon.html"><i
+                          class='material-icons-outlined'>navigate_next</i>Competency Achievement</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item active" href="auto-suggest-system.html"><i
+                      class='material-icons-outlined'>navigate_next</i>Autosuggest System</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--end navigation-->
+
+
+  <!--start main wrapper-->
+  <main class="main-wrapper">
+    <div class="main-content">
+      <!--breadcrumb-->
+      <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+        <div class="breadcrumb-title pe-3">Components</div>
+        <div class="ps-3">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+              <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="ms-auto">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary">Settings</button>
+            <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"> <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"> <a class="dropdown-item"
+                href="javascript:;">Action</a>
+              <a class="dropdown-item" href="javascript:;">Another action</a>
+              <a class="dropdown-item" href="javascript:;">Something else here</a>
+              <div class="dropdown-divider"></div> <a class="dropdown-item" href="javascript:;">Separated link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end breadcrumb-->
+
+      <div class="row">
+        <!-- konten -->
+        <div class="col-12 col-lg-6 col-xxl-6 d-flex flex-column">
+          <div class="card w-100">
+            <div class="card-body">
+              <div class="position-relative">
+                <img src="assets/images/gallery/profile-cover-min.png" class="img-fluid rounded" alt="">
+                <div class="position-absolute top-100 start-50 translate-middle">
+                  <img id="foto" src="assets/images/avatars/11.png" width="100" height="100"
+                    class="rounded-circle raised p-1 bg-white" alt="">
+                </div>
+              </div>
+              <div class="text-center mt-5 pt-4">
+                <h4 class="mb-1" id="employeeNameHeader">Ahmad Humaedi</h4>
+                <p class="mb-0" id="jobTitleHeader">Packing Operator</p>
+              </div>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item border-top">
+                <b>ID</b>
+                <br>
+                <span id="employeeId">079</span>
+              </li>
+              <li class="list-group-item">
+                <b>Name</b>
+                <br>
+                <span id="employeeName">Ahmad Humaedi</span>
+              </li>
+              <li class="list-group-item">
+                <b>Job Title</b>
+                <br>
+                <span id="jobTitle">Packing Operator</span>
+              </li>
+              <li class="list-group-item">
+                <b>Report to</b>
+                <br>
+                <span id="reportTo">Priyo Anarkie Yuseptyo</span>
+              </li>
+              <li class="list-group-item">
+                <b>Org. Group Name</b>
+                <br>
+                <span id="orgGroup">SHP Plant Production</span>
+              </li>
+              <li class="list-group-item">
+                <b>Job Level</b>
+                <br>
+                <span id="jobLevel">2</span>
+              </li>
+              <li class="list-group-item">
+                <b>Join Date</b>
+                <br>
+                <span id="joinDate">16 October 2018</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card rounded-2 w-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div>
+                  <p class="mb-1">Functional Competency</p>
+                  <h3 class="mb-0" id="functionalCompetency">92%</h3>
+                </div>
+                <div class="wh-42 d-flex align-items-center justify-content-center rounded-circle bg-grd-danger">
+                  <span class="material-icons-outlined fs-5 text-white">precision_manufacturing</span>
+                </div>
+              </div>
+              <div class="progress mb-0" style="height:15px;">
+                <div class="progress-bar bg-grd-danger" role="progressbar" style="width: 92%" aria-valuenow="92"
+                  aria-valuemin="0" aria-valuemax="100" id="pBar_functionalCompetency"></div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <p class="mb-0 font-13" id="position3">Packing Operator</p>
+                <div class="">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-grd-primary px-4" data-bs-toggle="modal"
+                    data-bs-target="#userListModal">View Details</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="userListModal" style="--bs-modal-width: 750px">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header border-bottom-0 py-2 bg-grd-primary">
+                          <h5 class="modal-title">Functional Competency - Ahmad Humaedi</h5>
+                          <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="modal">
+                            <i class="material-icons-outlined">close</i>
+                          </a>
+                        </div>
+                        <div class="modal-body">
+                          <div class="card w-100 mb-0 shadow-none">
+                            <div class="card-header border-0 p-3 border-bottom">
+                              <div class="position-relative">
+                                <div class="d-flex align-items-center gap-3">
+                                  <div
+                                    class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-warning">
+                                    <span class="material-icons-outlined text-white">percent</span>
+                                  </div>
+                                  <div class="flex-grow-1">
+                                    <h6 class="mb-1">% Functional Competency</h6>
+                                    <div class="progress">
+                                      <div id="percent_pBar_functionalCompetency"
+                                        class="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                                        style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="d-flex align-items-center gap-3">
+                                    <p id="percent_functionalCompetency" class="mb-0 fw-bold text-warning">60%</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                              <div class="user-list p-3">
+                                <div class="card">
+                                  <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0 bg-transparent">
+                                      <div class="d-flex align-items-center gap-3">
+                                        <div
+                                          class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-primary">
+                                          <span class="material-icons-outlined text-white">handyman</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                          <h6 class="mb-1">Bolt & Nut</h6>
+                                          <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                          <p class="mb-0 fw-bold text-success">28%</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item px-0 bg-transparent">
+                                      <div class="d-flex align-items-center gap-3">
+                                        <div
+                                          class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-success">
+                                          <span class="material-icons-outlined text-white">oil_barrel</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                          <h6 class="mb-1">Lubrikasi</h6>
+                                          <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 80%;"
+                                              aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                          <p class="mb-0 fw-bold text-success">80%</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item px-0 bg-transparent">
+                                      <div class="d-flex align-items-center gap-3">
+                                        <div
+                                          class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-branding">
+                                          <span
+                                            class="material-icons-outlined text-white">precision_manufacturing</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                          <h6 class="mb-1">Pneumatic</h6>
+                                          <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 60%;"
+                                              aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                          <p class="mb-0 fw-bold text-success">60%</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item px-0 bg-transparent">
+                                      <div class="d-flex align-items-center gap-3">
+                                        <div
+                                          class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-deep-blue">
+                                          <span class="material-icons-outlined text-white">height</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                          <h6 class="mb-1">Hydraulic</h6>
+                                          <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 66.67%;"
+                                              aria-valuenow="66.67" aria-valuemin="0" aria-valuemax="100">66.67%</div>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                          <p class="mb-0 fw-bold text-success">66.67%</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item px-0 bg-transparent">
+                                      <div class="d-flex align-items-center gap-3">
+                                        <div
+                                          class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-deep-blue">
+                                          <span class="material-icons-outlined text-white">settings</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                          <h6 class="mb-1">Drive & Transmission</h6>
+                                          <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 66.67%;"
+                                              aria-valuenow="66.67" aria-valuemin="0" aria-valuemax="100">66.67%</div>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                          <p class="mb-0 fw-bold text-success">66.67%</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item px-0 bg-transparent">
+                                      <div class="d-flex align-items-center gap-3">
+                                        <div
+                                          class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-deep-blue">
+                                          <span class="material-icons-outlined text-white">account_tree</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                          <h6 class="mb-1">Process Condition</h6>
+                                          <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%;"
+                                              aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                          <p class="mb-0 fw-bold text-success">50%</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item px-0 bg-transparent">
+                                      <div class="d-flex align-items-center gap-3">
+                                        <div
+                                          class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-deep-blue">
+                                          <span class="material-icons-outlined text-white">query_stats</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                          <h6 class="mb-1">Production Business Process Knowledge</h6>
+                                          <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%;"
+                                              aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                          <p class="mb-0 fw-bold text-success">100%</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item px-0 bg-transparent">
+                                      <div class="d-flex align-items-center gap-3">
+                                        <div
+                                          class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-deep-blue">
+                                          <span class="material-icons-outlined text-white">feedback</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                          <h6 class="mb-1">FMEA (Failure Mode and Effects Analysis)</h6>
+                                          <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                          <p class="mb-0 fw-bold text-success">25%</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item px-0 bg-transparent">
+                                      <div class="d-flex align-items-center gap-3">
+                                        <div
+                                          class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-deep-blue">
+                                          <span class="material-icons-outlined text-white">troubleshoot</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                          <h6 class="mb-1">PM (Physical - Mechanism) Analysis</h6>
+                                          <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-3">
+                                          <p class="mb-0 fw-bold text-success">25%</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-2 w-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div>
+                  <p class="mb-1">General Skill</p>
+                  <h3 class="mb-0">0%</h3>
+                </div>
+                <div class="wh-42 d-flex align-items-center justify-content-center rounded-circle bg-grd-danger">
+                  <span class="material-icons-outlined fs-5 text-white">pie_chart</span>
+                </div>
+              </div>
+              <div class="progress mb-0" style="height:15px;">
+                <div class="progress-bar bg-grd-danger" role="progressbar" style="width: 0%" aria-valuenow="0"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <p class="mb-0 font-13">Packing Operator Line A</p>
+                <div class="">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-inverse-danger px-4" data-bs-toggle="modal"
+                    data-bs-target="#BasicModal1">Phase 2</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="BasicModal1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header border-bottom-0 py-2">
+                          <h5 class="modal-title">Attention!</h5>
+                          <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="modal">
+                            <i class="material-icons-outlined">close</i>
+                          </a>
+                        </div>
+                        <div class="modal-body">Module ini akan dikembangkan pada Phase 2</div>
+                        <div class="modal-footer border-top-0">
+                          <button type="button" class="btn btn-grd-danger" data-bs-dismiss="modal">OK</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-2 w-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div>
+                  <p class="mb-1">Competency Fitness</p>
+                  <h3 class="mb-0">87%</h3>
+                </div>
+                <div class="wh-42 d-flex align-items-center justify-content-center rounded-circle bg-grd-danger">
+                  <span class="material-icons-outlined fs-5 text-white">monitor_heart</span>
+                </div>
+              </div>
+              <div class="progress mb-0" style="height:15px;">
+                <div class="progress-bar bg-grd-danger" role="progressbar" style="width: 87%" aria-valuenow="87"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <p class="mb-0 font-13">Packing Operator Line B</p>
+                <div class="">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-inverse-danger px-4" data-bs-toggle="modal"
+                    data-bs-target="#BasicModal2">Phase 2</button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="BasicModal2">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header border-bottom-0 py-2">
+                          <h5 class="modal-title">Attention!</h5>
+                          <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="modal">
+                            <i class="material-icons-outlined">close</i>
+                          </a>
+                        </div>
+                        <div class="modal-body">Module ini akan dikembangkan pada Phase 2</div>
+                        <div class="modal-footer border-top-0">
+                          <button type="button" class="btn btn-grd-danger" data-bs-dismiss="modal">OK</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-6">
+          <div class="row">
+            <div class="card">
+              <div class="card-header py-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="mb-0">Skill Matrix</h5>
+                  <div class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
+                      data-bs-toggle="dropdown">
+                      <span class="material-icons-outlined fs-5">more_vert</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+                      <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
+                      <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart-container1">
+                  <canvas id="chart5"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header py-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="mb-0">Achievements</h5>
+                  <div class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
+                      data-bs-toggle="dropdown">
+                      <span class="material-icons-outlined fs-5">more_vert</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+                      <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
+                      <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0 bg-transparent">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-primary">
+                        <span class="material-icons-outlined text-white">stars</span>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="mb-0">IMC Champion</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0 bg-transparent">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-success">
+                        <span class="material-icons-outlined text-white">hotel_class</span>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="mb-0">OPL & QCC Achievement</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0 bg-transparent">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-danger">
+                        <span class="material-icons-outlined text-white">lock</span>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="mb-0">Locked</h6>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0 bg-transparent">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-42 d-flex align-items-center justify-content-center rounded-3 bg-grd-danger">
+                        <span class="material-icons-outlined text-white">lock</span>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="mb-0">Locked</h6>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header py-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="mb-0">Competency Fitness</h5>
+                  <div class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
+                      data-bs-toggle="dropdown">
+                      <span class="material-icons-outlined fs-5">more_vert</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="javascript:;">Action</a></li>
+                      <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
+                      <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table id="example" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                      <tr>
+                        <th>Posisi</th>
+                        <th>Line</th>
+                        <th>Result</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Data akan dimasukkan oleh jQuery -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end konten -->
+    </div>
+  </main>
+  <!--end main wrapper-->
+
+
+  <!--start overlay-->
+  <div class="overlay btn-toggle"></div>
+  <!--end overlay-->
+
+
+  <!--start footer-->
+  <footer class="page-footer">
+    <p class="mb-0">Copyright © 2024. All right reserved.</p>
+  </footer>
+  <!--top footer-->
+  <!--start cart-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart">
+    <div class="offcanvas-header border-bottom h-70">
+      <h5 class="mb-0" id="offcanvasRightLabel">8 New Orders</h5>
+      <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="offcanvas">
+        <i class="material-icons-outlined">close</i>
+      </a>
+    </div>
+    <div class="offcanvas-body p-0">
+      <div class="order-list">
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/01.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">White Men Shoes</h5>
+            <p class="mb-0 order-price">$289</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/02.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Red Airpods</h5>
+            <p class="mb-0 order-price">$149</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/03.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Men Polo Tshirt</h5>
+            <p class="mb-0 order-price">$139</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/04.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Blue Jeans Casual</h5>
+            <p class="mb-0 order-price">$485</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/05.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Fancy Shirts</h5>
+            <p class="mb-0 order-price">$758</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/06.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Home Sofa Set </h5>
+            <p class="mb-0 order-price">$546</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/07.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Black iPhone</h5>
+            <p class="mb-0 order-price">$1049</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/08.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Goldan Watch</h5>
+            <p class="mb-0 order-price">$689</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas-footer h-70 p-3 border-top">
+      <div class="d-grid">
+        <button type="button" class="btn btn-grd btn-grd-primary" data-bs-dismiss="offcanvas">View Products</button>
+      </div>
+    </div>
+  </div>
+  <!--end cart-->
+
+  <!--start switcher-->
+  <button class="btn btn-grd btn-grd-primary position-fixed bottom-0 end-0 m-3 d-flex align-items-center gap-2"
+    type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+    <i class="material-icons-outlined">tune</i>Customize
+  </button>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="staticBackdrop">
+    <div class="offcanvas-header border-bottom h-70">
+      <div class="">
+        <h5 class="mb-0">Theme Customizer</h5>
+        <p class="mb-0">Customize your theme</p>
+      </div>
+      <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="offcanvas">
+        <i class="material-icons-outlined">close</i>
+      </a>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <p>Theme variation</p>
+
+        <div class="row g-3">
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="BlueTheme" checked>
+            <label
+              class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4"
+              for="BlueTheme">
+              <span class="material-icons-outlined">contactless</span>
+              <span>Blue</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="LightTheme">
+            <label
+              class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4"
+              for="LightTheme">
+              <span class="material-icons-outlined">light_mode</span>
+              <span>Light</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="DarkTheme">
+            <label
+              class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4"
+              for="DarkTheme">
+              <span class="material-icons-outlined">dark_mode</span>
+              <span>Dark</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="SemiDarkTheme">
+            <label
+              class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4"
+              for="SemiDarkTheme">
+              <span class="material-icons-outlined">contrast</span>
+              <span>Semi Dark</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="BoderedTheme">
+            <label
+              class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4"
+              for="BoderedTheme">
+              <span class="material-icons-outlined">border_style</span>
+              <span>Bordered</span>
+            </label>
+          </div>
+        </div><!--end row-->
+
+      </div>
+    </div>
+  </div>
+  <!--start switcher-->
+
+  <!--bootstrap js-->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!--plugins-->
+  <script src="assets/js/jquery.min.js"></script>
+  <!--plugins-->
+  <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
+  <script src="assets/plugins/chartjs/js/chart.js"></script>
+  <script src="assets/plugins/chartjs/js/chartjs-custom-profile.js"></script>
+  <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+  <script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+  <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+  <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>0
+  <script>
+    $(document).ready(function () {
+      var tableData = [
+        ["Packing", "A", "92%"],
+        ["Packing", "B", "85%"],
+        ["Packing", "C", "87%"],
+        ["Packing", "D", "87%"],
+        ["Packing", "E", "87%"],
+        ["Packing", "F", "86%"],
+        ["Packing", "G", "46%"],
+        ["Packing", "H", "59%"],
+        ["Packing", "I", "65%"],
+        ["Packing", "J", "59%"]
+      ];
+
+      var table = $('#example').DataTable({
+        responsive: true
+      });
+
+      table.clear().rows.add(tableData).draw();
+    });
+  </script>
+
+  <!-- JavaScript to Handle URL Parameter and Additional Details -->
+  <script>
+    $(document).ready(function () {
+      // Mendapatkan parameter dari URL
+      var urlParams = new URLSearchParams(window.location.search);
+
+      // Mengambil nilai parameter dari URL
+      var no = urlParams.get('no');
+      var employeeId = urlParams.get('employeeId');
+      var employeeName = urlParams.get('employeeName');
+      var foto = urlParams.get('foto');
+      var jobTitle = urlParams.get('jobTitle');
+      var reportTo = urlParams.get('reportTo');
+      var orgGroup = urlParams.get('orgGroup');
+      var jobLevel = urlParams.get('jobLevel');
+      var joinDate = urlParams.get('joinDate');
+      var line = urlParams.get('line');
+      var boltNut = urlParams.get('boltNut');
+      var lubrikasi = urlParams.get('lubrikasi');
+      var pneumatic = urlParams.get('pneumatic');
+      var hydraulic = urlParams.get('hydraulic');
+      var driveTransmission = urlParams.get('driveTransmission');
+      var processCondition = urlParams.get('processCondition');
+      var productionBusinessProcessKnowledge = urlParams.get('productionBusinessProcessKnowledge');
+      var fmea = urlParams.get('fmea');
+      var pmAnalysis = urlParams.get('pmAnalysis');
+      var functionalCompetency = urlParams.get('functionalCompetency');
+
+      // Name Header
+      $('#employeeNameHeader').text(employeeName);
+      $('#jobTitleHeader').text(jobTitle);
+      // Menampilkan data pada elemen HTML yang sesuai
+      $('#no').text(no);
+      $('#employeeId').text(employeeId);
+      $('#employeeName').text(employeeName);
+      var newFileName = foto;
+      var currentSrc = $("#foto").attr("src");
+      var basePath = currentSrc.substring(0, currentSrc.lastIndexOf('/') + 1);
+      $('#foto').attr('src', basePath + newFileName); // Pastikan atribut 'src' untuk elemen gambar
+      $('#jobTitle').text(jobTitle);
+      $('#reportTo').text(reportTo);
+      $('#orgGroup').text(orgGroup);
+      $('#jobLevel').text(jobLevel);
+      $('#joinDate').text(joinDate);
+      $('#line').text(line);
+      $('#boltNut').text(boltNut);
+      $('#lubrikasi').text(lubrikasi);
+      $('#pneumatic').text(pneumatic);
+      $('#hydraulic').text(hydraulic);
+      $('#driveTransmission').text(driveTransmission);
+      $('#processCondition').text(processCondition);
+      $('#productionBusinessProcessKnowledge').text(productionBusinessProcessKnowledge);
+      $('#fmea').text(fmea);
+      $('#pmAnalysis').text(pmAnalysis);
+      $('#functionalCompetency').text(functionalCompetency + '%');
+      $('#pBar_functionalCompetency').css('width', parseInt(functionalCompetency) + '%').attr('aria-valuenow', parseInt(functionalCompetency));
+      $('#percent_functionalCompetency').text(functionalCompetency + '%');
+      $('#percent_pBar_functionalCompetency').css('width', parseInt(functionalCompetency) + '%').attr('aria-valuenow', parseInt(functionalCompetency));
+
+    });
+
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new PerfectScrollbar(".main-content");
+      new PerfectScrollbar(".user-list");
+    });
+  </script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

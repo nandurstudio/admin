@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en" data-bs-theme="blue-theme">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalbe Nutritionals | Autosuggest System</title>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png">
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet">
+  <script src="assets/js/pace.min.js"></script>
+
+  <!--plugins-->
+  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/simplebar/css/simplebar.css">
+  <!--bootstrap css-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <!--main css-->
+  <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="sass/main.css" rel="stylesheet">
+  <link href="assets/css/horizontal-menu.css" rel="stylesheet">
+  <link href="sass/dark-theme.css" rel="stylesheet">
+  <link href="sass/blue-theme.css" rel="stylesheet">
+  <link href="sass/semi-dark.css" rel="stylesheet">
+  <link href="sass/bordered-theme.css" rel="stylesheet">
+  <link href="sass/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--start header-->
+  <header class="top-header">
+    <nav class="navbar navbar-expand align-items-center justify-content-between gap-4 border-bottom">
+      <div class="logo-header d-none d-xl-flex align-items-center gap-2">
+        <div class="logo-icon">
+          <img src="assets/images/logo-icon.png" class="logo-img" width="45" alt="">
+        </div>
+        <div class="logo-name">
+          <h5 class="mb-0">Kalbe Nutritionals</h5>
+        </div>
+      </div>
+      <div class="btn-toggle d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
+      </div>
+      <ul class="navbar-nav gap-1 nav-right-links align-items-center">
+        <li class="nav-item d-lg-none mobile-search-btn">
+          <a class="nav-link" href="javascript:;"><i class="material-icons-outlined">search</i></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="avascript:;" data-bs-toggle="dropdown"><img
+              src="assets/images/county/05.png" width="22" alt="">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/05.png" width="20" alt=""><span class="ms-2">United States</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/01.png" width="20" alt=""><span class="ms-2">Canada</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/02.png" width="20" alt=""><span class="ms-2">Malaysia</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/03.png" width="20" alt=""><span class="ms-2">Germany</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/04.png" width="20" alt=""><span class="ms-2">Netherlands</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/06.png" width="20" alt=""><span class="ms-2">China</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/07.png" width="20" alt=""><span class="ms-2">Sweden</span></a>
+            </li>
+            <li><a class="dropdown-item d-flex align-items-center py-2" href="javascript:;"><img
+                  src="assets/images/county/08.png" width="20" alt=""><span class="ms-2">India</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="javascrpt:;" class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
+            <img src="assets/images/avatars/13.png" class="rounded-circle p-1 border" width="45" height="45" alt="">
+          </a>
+          <div class="dropdown-menu dropdown-user dropdown-menu-end shadow">
+            <a class="dropdown-item  gap-2 py-2" href="javascript:;">
+              <div class="text-center">
+                <img src="assets/images/avatars/13.png" class="rounded-circle p-1 shadow mb-3" width="90" height="90"
+                  alt="">
+                <h5 class="user-name mb-0 fw-bold">Hello, Cici</h5>
+              </div>
+            </a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">person_outline</i>Profile</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">local_bar</i>Setting</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">dashboard</i>Dashboard</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">account_balance</i>Earning</a>
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">cloud_download</i>Downloads</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="javascript:;"><i
+                class="material-icons-outlined">power_settings_new</i>Logout</a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+  <!--end top header-->
+  <!--navigation-->
+  <div class="primary-menu">
+    <nav class="navbar navbar-expand-xl align-items-center">
+      <div class="offcanvas offcanvas-start w-260" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom h-70">
+          <div class="d-flex align-items-center gap-2">
+            <div class="">
+              <img src="assets/images/logo-icon.png" class="logo-icon" width="45" alt="logo icon">
+            </div>
+            <div class="">
+              <h4 class="logo-text">Kalbe Nutritionals</h4>
+            </div>
+          </div>
+          <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="offcanvas">
+            <i class="material-icons-outlined">close</i>
+          </a>
+        </div>
+        <div class="offcanvas-body p-0">
+          <ul class="navbar-nav align-items-center flex-grow-1">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                <div class="parent-icon"><i class='material-icons-outlined'>military_tech</i>
+                </div>
+                <div class="menu-title d-flex align-items-center">E-Competency</div>
+                <div class="ms-auto dropy-icon"><i class='material-icons-outlined'>expand_more</i></div>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="pages-coming-soon.html"><i
+                      class='material-icons-outlined'>navigate_next</i>Matrix Competency</a></li>
+                <li><a class="dropdown-item" href="pages-coming-soon.html"><i
+                      class='material-icons-outlined'>navigate_next</i>Training</a></li>
+                <li><a class="dropdown-item" href="pages-coming-soon.html"><i
+                      class='material-icons-outlined'>navigate_next</i>Assessment</a></li>
+                <li class="nav-item dropend">
+                  <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i
+                      class='material-icons-outlined'>pie_chart</i>Dashboard</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item" href="pages-coming-soon.html"><i
+                          class='material-icons-outlined'>navigate_next</i>Competency Achievement</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="auto-suggest-system.html"><i
+                      class='material-icons-outlined'>navigate_next</i>Autosuggest System</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--end navigation-->
+
+
+  <!--start main wrapper-->
+  <main class="main-wrapper">
+    <div class="main-content">
+      <!--breadcrumb-->
+      <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+        <div class="breadcrumb-title pe-3">Widgets</div>
+        <div class="ps-3">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 p-0">
+              <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">E-Competency</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="ms-auto">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary">Settings</button>
+            <button type="button" class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"> <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"> <a class="dropdown-item"
+                href="javascript:;">Action</a>
+              <a class="dropdown-item" href="javascript:;">Another action</a>
+              <a class="dropdown-item" href="javascript:;">Something else here</a>
+              <div class="dropdown-divider"></div> <a class="dropdown-item" href="javascript:;">Separated link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end breadcrumb-->
+
+      <div class="row row-cols-1 row-cols-lg-3">
+        <div class="col d-flex">
+          <div class="card w-100 rounded-4">
+            <div class="card-header p-3 bg-transparent">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="">
+                  <h5 class="mb-0">Autosuggest System</h5>
+                </div>
+                <!-- <div class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
+                    data-bs-toggle="dropdown">
+                    <span class="material-icons-outlined fs-5">more_vert</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div> -->
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="user-list p-3">
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="assets/images/flaticon/templates.png" width="45" height="45" class="rounded-circle" alt="">
+                    <div class="flex-grow-1">
+                      <h6 class="mb-0">Org. Group Name</h6>
+                      <p class="mb-0">Untuk melihat rekomendasi manpower berdasarkan Org. Group Name</p>
+                    </div>
+                    <div class="col">
+                      <button type="button" id="org_group" class="btn btn-danger px-4 raised d-flex gap-2"><i
+                          class="material-icons-outlined">group</i>Select</button>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="assets/images/flaticon/augmented-reality.png" width="45" height="45" class="rounded-circle" alt="">
+                    <div class="flex-grow-1">
+                      <h6 class="mb-0">Job Title</h6>
+                      <p class="mb-0">Untuk melihat rekomendasi manpower berdasarkan Job Title</p>
+                    </div>
+                    <div class="col">
+                      <button type="button" id="job_title" class="btn btn-danger px-4 raised d-flex gap-2"
+                        data-bs-toggle="modal" data-bs-target="#BasicModal"><i
+                          class="material-icons-outlined">work</i>Select</button>
+                      <div class="modal fade" id="BasicModal" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-bottom-0 py-2">
+                              <h5 class="modal-title">Job Title</h5>
+                              <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="modal">
+                                <i class="material-icons-outlined">close</i>
+                              </a>
+                            </div>
+                            <div class="modal-body">Under development!</div>
+                            <div class="modal-footer border-top-0">
+                              <button type="button" class="btn btn-grd-danger" data-bs-dismiss="modal">OK</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="assets/images/flaticon/user.png" width="45" height="45" class="rounded-circle" alt="">
+                    <div class="flex-grow-1">
+                      <h6 class="mb-0">Employee Data</h6>
+                      <p class="mb-0">Untuk melihat rekomendasi manpower berdasarkan Employee Data</p>
+                    </div>
+                    <div class="col">
+                      <button type="button" id="employee_data" class="btn btn-danger px-4 raised d-flex gap-2"
+                        data-bs-toggle="modal" data-bs-target="#BasicModal1"><i
+                          class="material-icons-outlined">badge</i>Select</button>
+                      <div class="modal fade" id="BasicModal1" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header border-bottom-0 py-2">
+                              <h5 class="modal-title">Employee Data</h5>
+                              <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="modal">
+                                <i class="material-icons-outlined">close</i>
+                              </a>
+                            </div>
+                            <div class="modal-body">Under development!</div>
+                            <div class="modal-footer border-top-0">
+                              <button type="button" class="btn btn-grd-danger" data-bs-dismiss="modal">OK</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex" id="functional_competency">
+          <div class="card w-100 rounded-4">
+            <div class="card-header p-3 bg-transparent">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="">
+                  <h5 class="mb-0">Functional Competency</h5>
+                </div>
+                <!-- <div class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle-nocaret options dropdown-toggle"
+                    data-bs-toggle="dropdown">
+                    <span class="material-icons-outlined fs-5">more_vert</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div> -->
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="payments-list">
+                <div class="d-flex flex-column gap-4">
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                        <img src="assets/images/flaticon/virtual.png" width="30" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h5 class="mb-0">SHP SCM - SHP Plant Digitalization</h5>
+                        <p class="mb-0">Phase 2</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                        <img src="assets/images/flaticon/app.png" width="30" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h5 class="mb-0">SHP SCM - SHP Plant General</h5>
+                        <p class="mb-0 fs-6">Phase 2</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                        <img src="assets/images/flaticon/settings.png" width="30" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h5 class="mb-0">SHP SCM - SHP Plant Maintenance</h5>
+                        <p class="mb-0 fs-6">Phase 2</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                        <img src="assets/images/flaticon/hierarchy.png" width="30" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h5 class="mb-0">SHP SCM - SHP Plant PPC</h5>
+                        <p class="mb-0 fs-6">Phase 2</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none"
+                    id="shp_plant_production">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                        <img src="assets/images/flaticon/network.png" width="30" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h5 class="mb-0">SHP SCM - SHP Plant Production</h5>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                      <img src="assets/images/flaticon/testing.png" width="30" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0">SHP SCM - SHP Plant QA</h5>
+                      <p class="mb-0 fs-6">Phase 2</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex" id="functional_competency_production">
+          <div class="card w-100 rounded-4">
+            <div class="card-header p-3 bg-transparent">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="">
+                  <h5 class="mb-0">Functional Competency - Production</h5>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="custom-list" style="
+              height: 590px;
+              position: relative;
+          ">
+                <div class="d-flex flex-column gap-4">
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                        <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h5 class="mb-0">Blending Operator</h5>
+                        <p class="mb-0">Phase 2</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                        <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h5 class="mb-0">Digitalization Engineer</h5>
+                        <p class="mb-0 fs-6">Phase 2</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                        <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h5 class="mb-0">Digitalization Engineer Assisstant</h5>
+                        <p class="mb-0 fs-6">Phase 2</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                        <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h5 class="mb-0">Filling Operator</h5>
+                        <p class="mb-0 fs-6">Phase 2</p>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- Button trigger modal -->
+                  <a href="#" role="button" id="packing_button" data-bs-toggle="modal" data-bs-target="#lineListModal"
+                    class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                        <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h5 class="mb-0">Packing Operator</h5>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- Modal -->
+                  <div class="modal fade" id="lineListModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header border-bottom-0 py-2 bg-grd-primary">
+                          <h5 class="modal-title">Packing Operator - Line List</h5>
+                          <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="modal">
+                            <i class="material-icons-outlined">close</i>
+                          </a>
+                        </div>
+                        <div class="modal-body">
+                          <div class="card w-100 mb-0 shadow-none">
+                            <div class="card-body p-0" style="align-self: center;">
+                              <div class="line-list" style="
+                              height: 400px;
+                              position: relative;
+                              align-content: center;
+                          ">
+                                <div class="row row-cols-auto g-3">
+
+                                  <div class="col">
+                                    <div class="btn-group-vertical">
+                                      <button type="button" id="line_a" class="btn btn-outline-danger">Line
+                                        A</button>
+                                      <button type="button" class="btn btn-outline-danger">Line B</button>
+                                      <button type="button" class="btn btn-outline-danger">Line C</button>
+                                      <button type="button" class="btn btn-outline-danger">Line D1</button>
+                                      <button type="button" class="btn btn-outline-danger">Line E</button>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="btn-group-vertical">
+                                      <button type="button" class="btn btn-outline-danger">Line F</button>
+                                      <button type="button" class="btn btn-outline-danger">Line G</button>
+                                      <button type="button" class="btn btn-outline-danger">Line H</button>
+                                      <button type="button" class="btn btn-outline-danger">Line I</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                      <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0">Packing Operator Assistant</h5>
+                      <p class="mb-0 fs-6">Phase 2</p>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                      <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0">Production Admin</h5>
+                      <p class="mb-0 fs-6">Phase 2</p>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                      <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0">Production Admin Assistant</h5>
+                      <p class="mb-0 fs-6">Phase 2</p>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                      <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0">Production General Admin Assistant</h5>
+                      <p class="mb-0 fs-6">Phase 2</p>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                      <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0">Repack Operator Assistant</h5>
+                      <p class="mb-0 fs-6">Phase 2</p>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                      <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0">Robotic Operator</h5>
+                      <p class="mb-0 fs-6">Phase 2</p>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                      <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0">Robotic Operator Assistant</h5>
+                      <p class="mb-0 fs-6">Phase 2</p>
+                    </div>
+                  </a>
+                  <a href="#" role="button" class="d-flex align-items-center gap-3 text-decoration-none">
+                    <div class="wh-48 d-flex align-items-center justify-content-center rounded-circle border">
+                      <img src="assets/images/flaticon/augmented-reality.png" width="30" alt="">
+                    </div>
+                    <div class="flex-grow-1">
+                      <h5 class="mb-0">Roving Supply Man Operator Assistant</h5>
+                      <p class="mb-0 fs-6">Phase 2</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end row-->
+    </div><!-- main content-->
+  </main>
+  <!--end main wrapper-->
+
+
+  <!--start overlay-->
+  <div class="overlay btn-toggle"></div>
+  <!--end overlay-->
+
+
+  <!--start footer-->
+  <footer class="page-footer">
+    <p class="mb-0">Copyright © 2024. All right reserved.</p>
+  </footer>
+  <!--top footer-->
+
+  <!--start cart-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart">
+    <div class="offcanvas-header border-bottom h-70">
+      <h5 class="mb-0" id="offcanvasRightLabel">8 New Orders</h5>
+      <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="offcanvas">
+        <i class="material-icons-outlined">close</i>
+      </a>
+    </div>
+    <div class="offcanvas-body p-0">
+      <div class="order-list">
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/01.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">White Men Shoes</h5>
+            <p class="mb-0 order-price">$289</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/02.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Red Airpods</h5>
+            <p class="mb-0 order-price">$149</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/03.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Men Polo Tshirt</h5>
+            <p class="mb-0 order-price">$139</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/04.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Blue Jeans Casual</h5>
+            <p class="mb-0 order-price">$485</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/05.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Fancy Shirts</h5>
+            <p class="mb-0 order-price">$758</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/06.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Home Sofa Set </h5>
+            <p class="mb-0 order-price">$546</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/07.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Black iPhone</h5>
+            <p class="mb-0 order-price">$1049</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+
+        <div class="order-item d-flex align-items-center gap-3 p-3 border-bottom">
+          <div class="order-img">
+            <img src="assets/images/orders/08.png" class="img-fluid rounded-3" width="75" alt="">
+          </div>
+          <div class="order-info flex-grow-1">
+            <h5 class="mb-1 order-title">Goldan Watch</h5>
+            <p class="mb-0 order-price">$689</p>
+          </div>
+          <div class="d-flex">
+            <a class="order-delete"><span class="material-icons-outlined">delete</span></a>
+            <a class="order-delete"><span class="material-icons-outlined">visibility</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas-footer h-70 p-3 border-top">
+      <div class="d-grid">
+        <button type="button" class="btn btn-grd btn-grd-primary" data-bs-dismiss="offcanvas">View Products</button>
+      </div>
+    </div>
+  </div>
+  <!--end cart-->
+
+
+  <!--start switcher-->
+  <button class="btn btn-grd btn-grd-primary position-fixed bottom-0 end-0 m-3 d-flex align-items-center gap-2"
+    type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+    <i class="material-icons-outlined">tune</i>Customize
+  </button>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="staticBackdrop">
+    <div class="offcanvas-header border-bottom h-70">
+      <div class="">
+        <h5 class="mb-0">Theme Customizer</h5>
+        <p class="mb-0">Customize your theme</p>
+      </div>
+      <a href="javascript:;" class="primaery-menu-close" data-bs-dismiss="offcanvas">
+        <i class="material-icons-outlined">close</i>
+      </a>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <p>Theme variation</p>
+
+        <div class="row g-3">
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="BlueTheme" checked>
+            <label
+              class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4"
+              for="BlueTheme">
+              <span class="material-icons-outlined">contactless</span>
+              <span>Blue</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="LightTheme">
+            <label
+              class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4"
+              for="LightTheme">
+              <span class="material-icons-outlined">light_mode</span>
+              <span>Light</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="DarkTheme">
+            <label
+              class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4"
+              for="DarkTheme">
+              <span class="material-icons-outlined">dark_mode</span>
+              <span>Dark</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="SemiDarkTheme">
+            <label
+              class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4"
+              for="SemiDarkTheme">
+              <span class="material-icons-outlined">contrast</span>
+              <span>Semi Dark</span>
+            </label>
+          </div>
+          <div class="col-12 col-xl-6">
+            <input type="radio" class="btn-check" name="theme-options" id="BoderedTheme">
+            <label
+              class="btn btn-outline-secondary d-flex flex-column gap-1 align-items-center justify-content-center p-4"
+              for="BoderedTheme">
+              <span class="material-icons-outlined">border_style</span>
+              <span>Bordered</span>
+            </label>
+          </div>
+        </div><!--end row-->
+
+      </div>
+    </div>
+  </div>
+  <!--start switcher-->
+
+  <!--bootstrap js-->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!--plugins-->
+  <script src="assets/js/jquery.min.js"></script>
+  <!--plugins-->
+  <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <script src="assets/plugins/metismenu/metisMenu.min.js"></script>
+  <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+  <script src="assets/plugins/peity/jquery.peity.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".data-attributes span").peity("donut")
+      new PerfectScrollbar(".user-list")
+      new PerfectScrollbar(".line-list")
+      const paymentsList = document.querySelector('.custom-list');
+      if (paymentsList) {
+        new PerfectScrollbar(paymentsList);
+      }
+
+      // Remove 'd-flex' class and hide the element on page load
+      $("#functional_competency").removeClass("d-flex").hide();
+      $("#functional_competency_production").removeClass("d-flex").hide();
+
+      // Show the element with animation and add 'd-flex' class when the button is clicked
+      $("#org_group").click(function () {
+        $("#functional_competency").fadeIn("slow").addClass("d-flex");
+      });
+
+      // Show the element with animation and add 'd-flex' class when the button is clicked
+      $("#shp_plant_production").click(function () {
+        $("#functional_competency_production").fadeIn("slow").addClass("d-flex");
+      });
+
+      // Hide the element with animation when the button is clicked
+      $("#job_title").click(function () {
+        $("#functional_competency").removeClass("d-flex").hide();
+        $("#functional_competency_production").removeClass("d-flex").hide();
+      });
+
+      // Hide the element with animation when the button is clicked
+      $("#employee_data").click(function () {
+        $("#functional_competency").removeClass("d-flex").hide();
+        $("#functional_competency_production").removeClass("d-flex").hide();
+      });
+
+      $("#line_a").click(function () {
+        window.location.href = "auto-suggest-system.html";
+      });
+
+    });
+
+  </script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
